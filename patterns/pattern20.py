@@ -1,20 +1,20 @@
 def pattern1(n):
-    for i in range(n):
-        for j in range(n-i-1,-1,-1):
-            print("*", end= " ")
-        for space in range(i*2):
+    for i in range(1,2*n):
+        star = i 
+        if i > n:
+            star = 2*n - i
+        for j in range(star):
+            print("*", end=" ")
+        space  = 2*(n - i)
+        if i > n:
+            space = 2*(i - n)
+        for s in range(space):
             print(" ", end=" ")
-        for K in range(n-i-1,-1,-1):
-            print("*", end= " ")
-        print()
-    
-    for i in range(n):
-        for j in range(i+1):
-            print("*", end= " ")
-        for space in range((n-i-1)*2):
-            print(" ", end=" ")
-        for K in range(i+1):
-            print("*", end= " ")
-        print()
+        star = i
+        if star > n:
+            star = 2*n - i
+        for k in range(star):
+            print("*", end=" ")
+        print() 
 
 pattern1(5) 
