@@ -6,5 +6,5 @@ def pName(n):
     else:
         return n * pName(n-1)
 
-summ = pName(5)
+summ = pName()
 print(summ)
