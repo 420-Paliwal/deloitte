@@ -9,4 +9,4 @@ def dichash(arr,x):
     return hashh.get(x, 0)
 
 summ = dichash([1, 2, 3, 2, 1, 4, 2], 2)
-print(summ)
+print(summ) 
