@@ -4,6 +4,7 @@ def bubbleSort(arr):
 		for j in range(n-1):
 			if arr[j] > arr[j+1]:
 				arr[j],arr[j+1] = arr[j+1],arr[j]
-	return arr
-ans = bubbleSort([64, 34, 25, 12, 22, 11, 90])
-print(ans)
+	
+arr = [64, 34, 25, 12, 22, 11, 90]    
+bubbleSort(arr)
+print(arr)
