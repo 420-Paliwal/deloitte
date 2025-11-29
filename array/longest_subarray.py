@@ -9,7 +9,7 @@ class Solution:
             while(j <= i and summ > k):
                 summ -= arr[j]
                 j += 1
-            if summ == k:
+            if summ == k:  
                 val = i+1 - j 
                 if lenn < val:
                     lenn = val
