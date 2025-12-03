@@ -5,8 +5,8 @@ class Solution:
         profit = 0
         for i in prices:
             cost = i - mini
-            profit = max(cost, profit)
-            mini = min(i, mini)
+            profit = cost if cost > profit else profit
+            mini = i if i < mini else mini
         return profit 
     
 obj = Solution()
