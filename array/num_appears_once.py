@@ -10,3 +10,4 @@ class Solution:
 obj = Solution()
 arr = [4,1,2,1,2]
 print(obj.singleNumber(arr))  # Output should be 4
+
