@@ -22,7 +22,7 @@ class Solution:
             else:
                 count = 1
                 temp = i+1
-                while(temp in arr):
+                while(temp in arr):   
                     count+=1
                     temp+=1
                 if count > lg:
