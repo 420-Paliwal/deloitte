@@ -13,7 +13,7 @@ class Solution:
         #         count = 1
         #     if count > lgs:
         #         lgs = count
-        # return lgs
+        # return lgs   
         arr = set(arr)
         lg = 1
         for i in arr:
